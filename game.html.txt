@@ -1,50 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fast Food Defense</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        #threat-indicator { color: red; font-weight: bold; }
-        /* Add other styles for improved UI */
-    </style>
-</head>
-<body>
-    <h1>Fast Food Defense</h1>
-    <div id="threat-indicator">Threat Level: Normal</div>
-    <script>
-        let waveCount = 0;
-        let bossWaveInterval = 10;
-        let threatLevel = "Normal";
-
-        function startGame() {
-            // Initialize game and smarter AI
-            spawnEnemies();
-            updateThreatIndicator();
-        }
-
-        function spawnEnemies() {
-            // Logic to spawn enemies intelligently
-            waveCount++;
-            if (waveCount % bossWaveInterval === 0) {
-                spawnBoss();
-            }
-            // Other enemy spawning logic
-            updateThreatIndicator();
-        }
-
-        function spawnBoss() {
-            // Logic for boss enemy
-            alert("A boss has appeared!");
-            threatLevel = "High!";
-        }
-
-        function updateThreatIndicator() {
-            document.getElementById('threat-indicator').innerText = `Threat Level: ${threatLevel}`;
-        }
-
-        startGame();
-    </script>
-</body>
-</html>
+<section>
+    <h2>Cookbook</h2>
+    <ul>
+        <li>Diary Entries for Fast Food Items</li>
+        <li>Diary Entries for Veggies</li>
+    </ul>
+</section>
